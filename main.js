@@ -27,4 +27,3 @@ function validation(theInput, event) {
   input.value = ""
   event.preventDefault()
 }
-

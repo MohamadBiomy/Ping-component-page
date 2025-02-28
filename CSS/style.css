@@ -39,6 +39,12 @@ body {
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .container {
+    padding: 70px 0 40px;
+  }
+}
+
 .heading-box {
   margin: 50px 0 70px; 
 }
@@ -61,6 +67,19 @@ body {
   font-size: 26px;
   text-align: center;
   font-weight: var(--light);
+}
+
+@media (max-width: 600px) {
+  .heading-box {
+    margin: 54px 0 40px; 
+  }
+  .heading-box h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .heading-box p {
+    font-size: 18px;
+  }
 }
 
 form {
@@ -117,6 +136,41 @@ form input[type="submit"]:hover {
   background-color: rgba(79, 125, 243, 0.75);
 }
 
+@media (max-width: 600px) {
+  form {
+    margin: auto;
+    gap: 10px;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  form input {
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+  }
+  
+  form input[type='text'] {
+    padding: 0 30px;
+    width: 100%;
+  }
+  form input[type='submit'] {
+    padding: 0 30px;
+    width: 100%;
+  }
+  form input[type='text'] + span {
+    left: 50%;
+    top: 100px;
+    width: 163px;
+    font-size: 10px;
+    transform: translateX(-50%);
+  }
+  
+  form input[type="submit"]:hover {
+    box-shadow: 0px 0px 0px 0px rgba(79, 125, 243, 0.5);
+  }
+}
+
 .image-box {
   margin: 80px auto;
   max-width: 830px;
@@ -124,6 +178,19 @@ form input[type="submit"]:hover {
 
 .image-box img {
   width: 100%;
+}
+
+@media (max-width: 420px) {
+  .image-box {
+    margin: 60px auto;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 600px) {
+  .image-box {
+    max-width: 400px;
+  }
 }
 
 .icons {
@@ -161,4 +228,20 @@ p.last {
   color: var(--gray);
   font-size: 20px;
   font-weight: 300;
+}
+
+@media (max-width: 600px) {
+  .icons {
+    gap: 10px;
+    margin: 0 auto 20px;
+    font-size: 16px;
+  }
+  .icon {
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+  }
+  p.last {
+    font-size: 14px;
+  }
 }
